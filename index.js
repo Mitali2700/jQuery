@@ -31,10 +31,29 @@ for(var i=0; i<5; i++){
 
 // jQuery
 
-$("button").click(function(){
-    $("h1").css("color","purple");
-});
+// $("button").click(function(){
+//     $("h1").css("color","purple");
+// });
 
 $("input").keypress(function(event){
-    console.log(event.key);
+    $("h1").text(event.key);
+});
+
+//$("h1").before("<button>New</button>")
+// before, after  (top, bottom)
+// prepend, append  (left,right)
+
+
+//Whenever we click any of the button it will hide the h1
+/*
+$("button").on("click",function(){
+    $("h1").hide();
+});
+*/
+
+//$("h1").show();     It will make h1 reappear.
+
+//Toggle
+$("button").on("click",function(){
+    $("h1").toggle();
 });
