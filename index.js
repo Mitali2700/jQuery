@@ -54,6 +54,25 @@ $("button").on("click",function(){
 //$("h1").show();     It will make h1 reappear.
 
 //Toggle
-$("button").on("click",function(){
+/*$("button").on("click",function(){
     $("h1").toggle();
+});
+*/
+
+/* 
+    SLIDE
+    1)slideUp
+    2)slideDown
+    3)slideToggle
+*/
+
+
+/*
+$("button").on("click",function(){
+    $("h1").animate({opacity:0.5});
+});
+*/
+
+$("button").on("click",function(){
+    $("h1").slideUp().slideDown().animate({opacity:0.5});
 });
